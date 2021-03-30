@@ -158,10 +158,43 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9md-Lf-RbL"/>
+                    <connections>
+                        <segue destination="lvn-qc-cLr" kind="showDetail" identifier="ThirdVC" id="rWg-C5-gub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-Zf-NnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="93.75"/>
+        </scene>
+        <!--Third ScreenVC-->
+        <scene sceneID="0HT-hD-mlY">
+            <objects>
+                <viewController id="lvn-qc-cLr" customClass="ThirdScreenVC" customModule="BlukAppu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GMJ-NO-35d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3rd Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxX-lk-tNv">
+                                <rect key="frame" x="165" y="411" width="84" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UnT-YJ-ZWn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zxX-lk-tNv" firstAttribute="centerX" secondItem="GMJ-NO-35d" secondAttribute="centerX" id="0e0-mm-dkf"/>
+                            <constraint firstItem="zxX-lk-tNv" firstAttribute="centerY" secondItem="GMJ-NO-35d" secondAttribute="centerY" id="jzI-yN-o9W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="justLabel" destination="zxX-lk-tNv" id="4JZ-Dn-U7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KS2-Za-Ue3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="93.75"/>
         </scene>
     </scenes>
     <resources>
