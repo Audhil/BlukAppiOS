@@ -19,26 +19,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="c3K-Am-qTW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6g-bu-s5M">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6g-bu-s5M">
                                 <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="stFb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWt-sf-wiG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-5m-TcM">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-5m-TcM">
                                 <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Sign in with Google" backgroundImage="Google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="stGoog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ptw-1F-7PN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-RM-3yr">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-RM-3yr">
                                 <rect key="frame" x="64.5" y="571.5" width="285" height="69"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Sign in with Email" backgroundImage="Email">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="stEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUi-f5-NaT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fn-8o-wns">
                                 <rect key="frame" x="105.5" y="372.5" width="203" height="21"/>
@@ -52,13 +61,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6P-YM-Hk4">
+                                <rect key="frame" x="175" y="660.5" width="64" height="30"/>
+                                <state key="normal" title="Click me!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5FU-kf-FHs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbR-LT-Jsv">
+                                <rect key="frame" x="345" y="822" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BiO-So-8gM" kind="show" id="MDB-An-U3k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="L6g-bu-s5M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4w6-9H-pKa"/>
+                            <constraint firstItem="I6P-YM-Hk4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="73e-yc-PoN"/>
                             <constraint firstItem="tjE-5m-TcM" firstAttribute="top" secondItem="L6g-bu-s5M" secondAttribute="bottom" constant="10" id="9OI-ws-9Nc"/>
                             <constraint firstItem="c3K-Am-qTW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AFu-U2-WnI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kbR-LT-Jsv" secondAttribute="bottom" constant="10" id="DwX-rY-zw6"/>
                             <constraint firstItem="enD-az-DZo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FaP-PX-dZm"/>
                             <constraint firstItem="tjE-5m-TcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTV-ZI-83H"/>
                             <constraint firstAttribute="bottom" secondItem="c3K-Am-qTW" secondAttribute="bottom" id="Hju-bt-HRe"/>
@@ -67,15 +96,72 @@
                             <constraint firstItem="3Fn-8o-wns" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJe-Wa-YTU"/>
                             <constraint firstItem="c3K-Am-qTW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UPu-tC-gmJ"/>
                             <constraint firstItem="L6g-bu-s5M" firstAttribute="top" secondItem="3Fn-8o-wns" secondAttribute="bottom" constant="20" id="YFe-MW-S7G"/>
+                            <constraint firstItem="I6P-YM-Hk4" firstAttribute="top" secondItem="ea0-RM-3yr" secondAttribute="bottom" constant="20" id="bDb-fM-fuL"/>
                             <constraint firstItem="ea0-RM-3yr" firstAttribute="top" secondItem="tjE-5m-TcM" secondAttribute="bottom" constant="10" id="fEh-wo-XMa"/>
                             <constraint firstAttribute="trailing" secondItem="c3K-Am-qTW" secondAttribute="trailing" id="k2h-EU-Rhb"/>
                             <constraint firstItem="L6g-bu-s5M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3w-cW-3xC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kbR-LT-Jsv" secondAttribute="trailing" constant="37" id="tTE-7N-jO8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stEmailOutlet" destination="ea0-RM-3yr" id="nGY-4X-kdZ"/>
+                        <outlet property="stFbOutlet" destination="L6g-bu-s5M" id="aMQ-NS-e59"/>
+                        <outlet property="stGoogOutlet" destination="tjE-5m-TcM" id="TdG-z9-RrK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="94"/>
+        </scene>
+        <!--Next ScreenVC-->
+        <scene sceneID="bHT-uf-tWy">
+            <objects>
+                <viewController id="BiO-So-8gM" customClass="NextScreenVC" customModule="BlukAppu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGy-kl-80C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm next screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6y-bw-RkW">
+                                <rect key="frame" x="149" y="411" width="116" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-VR-KeH">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="BiO-So-8gM" eventType="touchUpInside" id="QSc-fQ-jcj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sq1-Yw-FJN">
+                                <rect key="frame" x="148" y="460.5" width="118" height="30"/>
+                                <state key="normal" title="tap to 3rd screen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateBtnPressed:" destination="BiO-So-8gM" eventType="touchUpInside" id="ezj-1M-m2o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hvQ-fh-Fsx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U6y-bw-RkW" firstAttribute="centerY" secondItem="nGy-kl-80C" secondAttribute="centerY" id="8lA-Tw-T2m"/>
+                            <constraint firstItem="sq1-Yw-FJN" firstAttribute="centerX" secondItem="nGy-kl-80C" secondAttribute="centerX" id="8w8-EI-jSU"/>
+                            <constraint firstItem="uBF-VR-KeH" firstAttribute="leading" secondItem="hvQ-fh-Fsx" secondAttribute="leading" constant="20" id="8yH-Md-yom"/>
+                            <constraint firstItem="uBF-VR-KeH" firstAttribute="top" secondItem="hvQ-fh-Fsx" secondAttribute="top" constant="20" id="kxb-ym-EJ1"/>
+                            <constraint firstItem="sq1-Yw-FJN" firstAttribute="top" secondItem="U6y-bw-RkW" secondAttribute="bottom" constant="29" id="ufc-tT-sBB"/>
+                            <constraint firstItem="U6y-bw-RkW" firstAttribute="centerX" secondItem="nGy-kl-80C" secondAttribute="centerX" id="vdK-zb-VbV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9md-Lf-RbL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiU-Zf-NnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="93.75"/>
         </scene>
     </scenes>
     <resources>
