@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         stGoogOutlet.isHidden = false
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
 }
