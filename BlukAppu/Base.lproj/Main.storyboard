@@ -248,12 +248,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-Wg-sFR">
+                                <rect key="frame" x="0.0" y="-27" width="414" height="896"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-ap-m0L">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDO-aW-lTz">
                                         <rect key="frame" x="34" y="19" width="34" height="30"/>
-                                        <state key="normal" title="Back"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="backBtnPress:" destination="Ccq-AL-iwC" eventType="touchUpInside" id="fUf-SN-JKH"/>
                                         </connections>
@@ -270,11 +275,17 @@
                         <viewLayoutGuide key="safeArea" id="7eO-t1-PSN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kwO-ap-m0L" firstAttribute="top" secondItem="7eO-t1-PSN" secondAttribute="top" id="5AH-xQ-HMR"/>
+                            <constraint firstItem="2zn-Wg-sFR" firstAttribute="centerX" secondItem="zml-xS-tAe" secondAttribute="centerX" id="74h-gh-Zq3"/>
+                            <constraint firstItem="kwO-ap-m0L" firstAttribute="leading" secondItem="7eO-t1-PSN" secondAttribute="leading" id="7tj-FF-Oq8"/>
                             <constraint firstAttribute="bottom" secondItem="kwO-ap-m0L" secondAttribute="bottom" id="Cb0-i6-g4J"/>
                             <constraint firstItem="kwO-ap-m0L" firstAttribute="trailing" secondItem="7eO-t1-PSN" secondAttribute="trailing" id="JW8-mK-gcB"/>
                             <constraint firstItem="kwO-ap-m0L" firstAttribute="centerY" secondItem="zml-xS-tAe" secondAttribute="centerY" id="LPC-BL-kjY"/>
                             <constraint firstItem="kwO-ap-m0L" firstAttribute="leading" secondItem="7eO-t1-PSN" secondAttribute="leading" id="Msr-R2-8GR"/>
+                            <constraint firstItem="kwO-ap-m0L" firstAttribute="trailing" secondItem="7eO-t1-PSN" secondAttribute="trailing" id="Te9-ac-jXa"/>
                             <constraint firstItem="kwO-ap-m0L" firstAttribute="top" secondItem="7eO-t1-PSN" secondAttribute="top" id="dJu-Id-ISz"/>
+                            <constraint firstItem="2zn-Wg-sFR" firstAttribute="centerY" secondItem="zml-xS-tAe" secondAttribute="centerY" id="dpn-gw-rzv"/>
+                            <constraint firstAttribute="bottom" secondItem="kwO-ap-m0L" secondAttribute="bottom" id="mxe-Kz-q8S"/>
                             <constraint firstItem="kwO-ap-m0L" firstAttribute="centerX" secondItem="zml-xS-tAe" secondAttribute="centerX" id="zUH-0D-tAD"/>
                         </constraints>
                     </view>
