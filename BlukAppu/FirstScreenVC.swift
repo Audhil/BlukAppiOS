@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {    
+class FirstScreenVC: UIViewController {
     
     @IBOutlet weak var stFbOutlet: UIButton!
     @IBOutlet weak var stEmailOutlet: UIButton!

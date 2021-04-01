@@ -29,7 +29,6 @@ class NextScreenVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         pickerSelectedBtn.setTitle(states[row], for: UIControl.State.normal)
     }
     
-    
     @IBOutlet weak var statePicker: UIPickerView!
     
     @IBAction func backBtnPressed(_ sender: Any) {
@@ -55,16 +54,4 @@ class NextScreenVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         statePicker.dataSource = self
         statePicker.delegate = self
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
